@@ -1,4 +1,14 @@
-### Engineering
+# Engineering
+
+## Local setup
+
+### Dependencies
+
++ [plovr](http://plovr.com/)
++ [Rails 3.2.3](https://rvm.io/)
++ Java    // needed to run plovr
+
+### Getting started
 
 To get started developing locally:
 
