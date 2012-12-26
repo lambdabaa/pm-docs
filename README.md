@@ -6,6 +6,7 @@
 
 + [plovr](http://plovr.com/)
 + [Rails 3.2.3](https://rvm.io/)
++ [Redis](http://redis.io/)
 + [Java](http://www.java.com/en/download/index.jsp)   // needed to run plovr
 
 ### Getting started
