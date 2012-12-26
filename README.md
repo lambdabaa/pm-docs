@@ -10,10 +10,27 @@
 
 ### Getting started
 
-To get started developing locally:
+To get started developing locally we need to do two things:
 
-    cd client && java -jar tools/plovr-eba786b34df9.jar serve plovr.json
-    cd server && rails s
+Run the Rails web/asset server on port 3000 via:
 
-This runs the plovr build server on port 9810 and the rails web/asset server  
-on port 3000.  
+    cd server
+    bundle install
+    rake db:create:all
+    rake db:migrate
+    rake db:fixtures:load   # Only if you want the fixtures data
+    rails s
+
+Run the plovr build server on port 9810 via:
+
+    cd client
+    java -jar tools/plovr-eba786b34df9.jar serve plovr.json
+
+### Running the tests
+
+To run the tests do:
+
+    cd server
+    rake db:migrate
+    rake db:test:prepare  # Loads the test fixtures
+    rspec -c -f d spec/*spec.rb
