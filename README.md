@@ -34,4 +34,12 @@ To run the tests do:
     cd server
     rake db:migrate
     rake db:test:prepare  # Loads the test fixtures
-    rspec -c -f d spec/*spec.rb
+    bundle exec rspec -c -f d spec/**/*spec.rb
+
+### Release
+
+    cd client
+    tools/compile.sh
+    cd ../server
+    git commit -am "Build assets for release"
+    git push origin master
