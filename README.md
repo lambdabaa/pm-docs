@@ -4,12 +4,14 @@
 
 ### Dependencies
 
++ [grunt](http://gruntjs.com/)  // Needed to build JQuery
++ [less](http://lesscss.org/)
 + [plovr](http://plovr.com/)
 + [Postgresql 9.2.1](http://www.postgresql.org/)
 + [Rails 3.2.3](https://rvm.io/)
 + [Redis](http://redis.io/)
 + [Ruby 1.9.3](https://rvm.io/)
-+ [Java](http://www.java.com/en/download/index.jsp)   // needed to run plovr
++ [Java](http://www.java.com/en/download/index.jsp)   // Needed to run plovr
 
 ### Getting started
 
